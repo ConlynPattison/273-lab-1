@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package serviceA;
+
+service ServiceA {
+    rpc Echo (EchoRequest) returns (EchoReply);
+    rpc HealthCheck (HealthCheckRequest) returns (HealthCheckReply);
+}
+
+message EchoRequest {
+    string msg = 1;
+}
+
+message EchoReply {
+    string msg = 1;
+}
+
+message HealthCheckRequest {
+}
+
+message HealthCheckReply {
+    string status = 1;
+}
