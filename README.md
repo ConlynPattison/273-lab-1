@@ -82,31 +82,37 @@ curl "http://localhost:8081/call-echo?msg=test"
 
 1. Begin both service processes in separate terminals.
 
-image
+<img width="1369" height="241" alt="image" src="https://github.com/user-attachments/assets/9e15ec27-44e4-4fdc-8d31-deb4c13d5b73" />
 
 2. Make request call to service B from a separate terminal process and view successful combined response and logging.
 
-image
+<img width="766" height="311" alt="image" src="https://github.com/user-attachments/assets/919cdd08-a0ef-49a5-b2c6-da8085697f89" />
+
+<img width="1351" height="412" alt="image" src="https://github.com/user-attachments/assets/1aa09bcb-cd01-4a4e-b883-398a377c8a46" />
 
 #### Failure case - service unavilable
 
 1. Begin only service B.
 
-image
+<img width="1351" height="411" alt="image" src="https://github.com/user-attachments/assets/f0c5ab5c-3917-4350-949f-c8ff522d3d2b" />
 
-2. Make request call to service B from a separate terminal process and view failure to connect, combined response, and logging.
+2. Make request call to service B from a separate terminal process and view failure to connect, 503 code, combined response, and logging.
 
-image
+<img width="1351" height="412" alt="image" src="https://github.com/user-attachments/assets/c98c12fd-24da-4cc1-8103-6ba4ac00d8ba" />
+
+<img width="763" height="310" alt="image" src="https://github.com/user-attachments/assets/508bd1b0-1e47-4ccd-9cbc-4421e6c9660b" />
 
 #### Failure case - service slow
 
 1. Begin service B and service A, but use delay flag and value in launching service A.
 
-image
+<img width="1353" height="410" alt="image" src="https://github.com/user-attachments/assets/d6d95fe6-cc8c-4016-adb9-c8b2beffc825" />
 
 2. Make request call to service B from a separate terminal process and view timeout failure, combined response, and logging.
 
-image
+<img width="1351" height="409" alt="image" src="https://github.com/user-attachments/assets/5fbfa52d-fde7-41eb-9aec-04edfdbc524d" />
+
+<img width="766" height="313" alt="image" src="https://github.com/user-attachments/assets/bc975cb6-f31b-4055-b490-531811a1df14" />
 
 ### What makes this distributed?
 
