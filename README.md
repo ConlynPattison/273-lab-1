@@ -9,7 +9,7 @@ Goal: Build a tiny, locally distributed system with two services that communicat
 ### service_a
 
 - Provider
-- gRPC server using python+grpc
+- gRPC server using Python+grpc
 - Can handle basic requests
 - `localhost:8080`
 
@@ -26,7 +26,7 @@ python app.py
 ### service_b
 
 - Consumer
-- HTTP server using python+flask
+- HTTP server using Python+Flask
 - Behaves correctly when A is not available or slow
 - `GET /health → {"status":"ok"}`
 - `GET /call-echo?msg=hello`
@@ -62,11 +62,11 @@ python -m grpc_tools.protoc \
 
 ---
 
-## Q&A
+## Other Deliverables
 
 ### How to run locally?
 
-Local terminal commands are provided above for starting service A, starting service B, and gRPC protocol buffer generation.
+Local terminal commands are provided above for starting service A, starting service B, and generating gRPC protocol buffers.
 
 To request the call-echo endpoint from service B, run the following within a new terminal:
 
