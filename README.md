@@ -116,4 +116,6 @@ curl "http://localhost:8081/call-echo?msg=test"
 
 ### What makes this distributed?
 
-This is a distributed system because we have two separate processes running and communicating across a network. Each service is able to both operate and fail independently without cascading fail stops across components.
+This is a distributed system because we have two separate processes running and communicating across a network.
+Each service can fail independently without cascading across components.
+Being separate Python processes, they also do not share the same memory space and could be deployed to not share the same clock.
